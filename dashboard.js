@@ -1,0 +1,1 @@
+const dashboard = document.getElementById('dashboard');fetch('/dashboard').then((res) => res.json()).then((data) => {dashboard.innerHTML = `<h1>مرحبا ${data.username}</h1><p>اهلا بك في الداش بورد</p>`;});
